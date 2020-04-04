@@ -293,10 +293,10 @@ body .jumbotron{
         width: 250px;
         height: 250px;
         border-radius: 100%;
-        background: #0062cc96;
+        background: #0b488a96;
     }
     .hero-app-1 {
-        position: absolute;
+        position: fixed;
         left: 70%;
         top: 0%;
     }
@@ -307,9 +307,9 @@ body .jumbotron{
         bottom: unset;
     }
     .hero-app-3 {
-        position: absolute;
+        position: fixed;
         left: 10%;
-        top: 50%;
+        top: 44%;
         bottom: unset;
     }
     .line-head{
@@ -330,6 +330,7 @@ body .jumbotron{
         height: 50vh;
     }
     .header .head-box{
+        z-index: 100;
         margin: auto;
         display: flex;
         flex-direction: column;
@@ -346,8 +347,8 @@ body .jumbotron{
     }
     .header .jumbotron .img-box-2{
         margin: 0 auto;
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
         border-radius: 100%;
         overflow: hidden;
         box-shadow: -1px 10px 30px 0px #07192d80;
