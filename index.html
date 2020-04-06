@@ -71,6 +71,13 @@
                     <div class="col-6">
                         <button class="btn btn-sm btn-neon">Email me</button>
                     </div>
+                    <div class="col-6">
+                        <div class="socmed-nav">
+                                <span class="text-white icon-instagram"></span>
+                                <span class="text-white icon-dribbble"></span>
+                                <span class="text-white icon-github"></span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -79,7 +86,7 @@
             <div class="jumbotron">
                 <div class="container">
                     <div class="row row-head">
-                        <div class="head-box">
+                        <div class="head-box" style="position: fixed">
                             <div class="img-box">
                                 <div class="img-box-2">
                                     <img src="assets/img/profile.jpeg" alt="">
@@ -97,6 +104,7 @@
                 </div>
             </div>
         </section>
+    <section class="main" style="position: relative; z-index: 5 !important;">
         <section class="about">
             <div class="container about-box">
                 <div class="row">
@@ -114,27 +122,83 @@
             <div class="container skill-box">
                 <div class="row">
                     <div class="container skill-title">
-                        <h4 class="text-white mb-3">Skill & Tools</h4>
+                        <h4 class="text-white mb-3">Skills & Tools</h4>
                     </div>
                 </div>
                 <div class="skill-content">
-                    <div class="card skill-card">
+                    <!-- card-skill -->
+                    <div class="card skill-card mb-3">
+                        <div class="hero-app-2 custom-animation4"><span class="particle-skill"></span></div>
                         <div class="card-body">
                             <div class="item-skill">
-                                <h6>HTML & CSS</h6>
+                                <h6 class="text-white-2">HTML & CSS</h6>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 90%;"></div>
+                                </div>
                             </div>
                             <div class="item-skill">
-                                <h6>HTML & CSS</h6>
+                                <h6>Javascript</h6>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 60%;"></div>
+                                </div>
                             </div>
                             <div class="item-skill">
-                                <h6>HTML & CSS</h6>
+                                <h6>Laravel</h6>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 70%;"></div>
+                                </div>
                             </div>
+                            <div class="item-skill">
+                                    <h6>Vue JS</h6>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 50%;"></div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <!-- tools -->
+                    <div class="card tool-card">
+                        <div class="row">
+                            <div class="col-3">q</div>
+                            <div class="col-3">w</div>
+                            <div class="col-3"></div>
+                            <div class="col-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Project -->
+        <section class="project pb-3">
+            <div class="container project-box">
+                <div class="row">
+                    <div class="container project-title mt-4 mb-2">
+                        <h4 class="text-white">Projects</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="container">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="pills-code-tab" data-toggle="pill" href="#pills-code" role="tab" aria-controls="pills-code" aria-selected="true">Code</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-design-tab" data-toggle="pill" href="#pills-design" role="tab" aria-controls="pills-design" aria-selected="false">Design</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-code" role="tabpanel" aria-labelledby="pills-code-tab">...</div>
+                            <div class="tab-pane fade" id="pills-design" role="tabpanel" aria-labelledby="pills-design-tab">bkaa</div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </section>
+    </section>
+    <footer>
+        <p class="text-center text-white-2">Copyright &copy; 2020 Akhmadkha</p>
+    </footer>
     <!-- script -->
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>

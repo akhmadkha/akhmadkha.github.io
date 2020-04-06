@@ -175,7 +175,10 @@
 }
 
 /* Laptop */
-@media screen and (min-width: 1024px){  
+@media screen and (min-width: 1024px){
+  .smartphone{
+    display: none;
+  }  
 .heading-1{
     font-size: 3rem;
     font-weight: bolder;
@@ -275,6 +278,7 @@ body .jumbotron{
     }
     /* huaa */
     body{
+      padding-bottom: 4rem;
       background: #201f1f !important;
     }
     /* Componen */
@@ -289,7 +293,7 @@ body .jumbotron{
         width: 250px;
         height: 250px;
         border-radius: 100%;
-        background: #124773;
+        background: linear-gradient(45deg, #0156a996, transparent);
     }
     .particle-span-2{
         display: block;
@@ -302,7 +306,7 @@ body .jumbotron{
         width: 250px;
         height: 250px;
         border-radius: 100%;
-        background: #0b488a96;
+        background: #0b7e8aba;
     }
     .hero-app-1 {
         position: fixed;
@@ -316,7 +320,6 @@ body .jumbotron{
         bottom: unset;
     }
     .hero-app-3 {
-        position: fixed;
         left: 10%;
         top: 44%;
         bottom: unset;
@@ -328,6 +331,13 @@ body .jumbotron{
         margin: 1rem auto;
         border-radius: 1000px;
     }
+    .navbar .socmed-nav{
+      float: right;
+    }
+    .navbar .socmed-nav span{
+      margin-right: 1rem;
+      font-size: 1.5rem;
+    }
     .navbar .btn-neon{
       border-radius: 100px;
       padding-left: 2rem;
@@ -338,7 +348,7 @@ body .jumbotron{
       box-shadow: 0px 5px 20px rgba(0, 123, 255, 0.56);
     }
     .navbar{
-      background: #19191b;
+      background: #141414;
       border-radius: 20px 20px 0px 0px;
       padding-top: 1rem !important;
       padding-bottom: 1rem !important;
@@ -354,15 +364,15 @@ body .jumbotron{
         margin: unset;
         height: 60vh;
         border-radius: unset;
-        background: linear-gradient(45deg, #05275f, #124165);
+        background: linear-gradient(45deg, #05275f, #00bba1);
     }
     .header .jumbotron .row-head{
         height: 50vh;
     }
     .header .head-box{
-        z-index: 100;
-        display: flex;
-        flex-direction: column;
+      top: 10vh;
+      z-index: 1;
+      margin: auto 0;
     }
     .header .jumbotron .img-box{
         z-index: 100;
@@ -391,13 +401,18 @@ body .jumbotron{
     .header .jumbotron .head-title h4 {
         color: white;
         margin: unset;
+        font-size: 1.5rem;
+        font-weight: bold;
     }
     /* about */
+    .about{
+      background: #201f1f;
+    }
     .about .about-box{
         background: #201f1f;
         position: relative;
-        top: -30px;
-        border-radius: 30px 30px 0px 0px;
+        top: -35px;
+        border-radius: 40px 40px 0px 0px;
         padding-right: 30px;
         padding-left: 30px;
     }
@@ -410,5 +425,58 @@ body .jumbotron{
       background: #201f1f;
       padding-right: 30px;
       padding-left: 30px;
+  }
+  .skills .skill-card{
+    overflow: hidden;
+    border-radius: 20px;
+    color: white;
+    background: linear-gradient(45deg, #ff047b, #ffa707);
+  }.skills .skill-card h6{
+    color: white;
+  }
+  .skills .skill-card .card-body{
+    z-index: 2;
+  }
+  .skills .skill-card .particle-skill{
+    display: block;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    background: linear-gradient(45deg, transparent, #eab906b3);
+  }
+  .skills .item-skill{
+    margin-bottom: 1rem;
+  }
+  .skills .item-skill .progress{
+    height: 0.5rem;
+    overflow: hidden;
+    font-size: .75rem;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .skills .item-skill .progress-bar{
+    border-radius: 50px;
+    background: linear-gradient(245deg, white, #ffffff24);
+  }
+  /* ----project----- */
+  .project .project-box{
+    background: #201f1f;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .project-box .nav-item .nav-link{
+    color: #f1f1f1;
+    transform: scale(1);
+    transition: all 1s;
+  }
+  .project-box .nav-item .nav-link.active{
+    background: #0063cc18;
+    transform: scale(1.1);
+    transition: all 1s;
+  }
+  .project-box .nav-item .nav-link.active::after{
+    display: block;
+    content: '';
+    border: 2px solid #0062cc;
+    border-radius: 100px;
   }
 }
