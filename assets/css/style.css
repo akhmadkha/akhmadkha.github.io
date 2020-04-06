@@ -1,5 +1,11 @@
 /* component */
-
+@font-face{
+  font-family: "ProductSans";
+  src: url(../fonts/Product_Sans_Regular.ttf) format("truetype");
+}
+body {
+  font-family:  "ProductSans"
+}
 /* particle */
 .hero-app-1 {
     position: absolute;
@@ -277,9 +283,17 @@ body .jumbotron{
         display: none;
     }
     /* huaa */
-    body{
+    @font-face{
+      font-family: "ProductSans";
+      src: url(../fonts/Product_Sans_Regular.ttf) format("truetype");
+    }
+    body {
+      font-family:  "ProductSans";
       padding-bottom: 4rem;
       background: #201f1f !important;
+    }
+    .smartphone{
+      font-family:  "ProductSans";
     }
     /* Componen */
     .text-white{
@@ -442,7 +456,7 @@ body .jumbotron{
     width: 250px;
     height: 250px;
     border-radius: 100%;
-    background: linear-gradient(45deg, transparent, #eab906b3);
+    background: linear-gradient(45deg, transparent, rgba(234, 185, 6, 0.7019607843137254));
   }
   .skills .item-skill{
     margin-bottom: 1rem;
@@ -455,11 +469,20 @@ body .jumbotron{
   }
   .skills .item-skill .progress-bar{
     border-radius: 50px;
-    background: linear-gradient(245deg, white, #ffffff24);
+    background: linear-gradient(245deg, white, rgba(255, 255, 255, 0.1411764705882353));
+  }
+  .skills .tool-card{
+    background: linear-gradient(45deg, #067aec, #b50570);
+    border: unset;
+    border-radius: 30px;
   }
   /* ----project----- */
+  .project{
+    padding-top: 2rem;
+  }
   .project .project-box{
-    background: #201f1f;
+    border-radius: 40px 40px 0px 0px;
+    background: #313030;
     padding-right: 30px;
     padding-left: 30px;
   }
@@ -469,7 +492,7 @@ body .jumbotron{
     transition: all 1s;
   }
   .project-box .nav-item .nav-link.active{
-    background: #0063cc18;
+    background: rgba(0, 99, 204, 0.09411764705882353);
     transform: scale(1.1);
     transition: all 1s;
   }
