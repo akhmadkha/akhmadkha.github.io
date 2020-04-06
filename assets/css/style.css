@@ -274,7 +274,16 @@ body .jumbotron{
         display: none;
     }
     /* huaa */
+    body{
+      background: #201f1f !important;
+    }
     /* Componen */
+    .text-white{
+      color: white !important;
+    }
+    .text-white-2{
+      color: #c5c5c5;
+    }
     .particle-span{
         display: block;
         width: 250px;
@@ -319,6 +328,27 @@ body .jumbotron{
         margin: 1rem auto;
         border-radius: 1000px;
     }
+    .navbar .btn-neon{
+      border-radius: 100px;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      color: white;
+      font-weight: bold;
+      background: linear-gradient(45deg, #0062cc, #17a2b8);
+      box-shadow: 0px 5px 20px rgba(0, 123, 255, 0.56);
+    }
+    .navbar{
+      background: #19191b;
+      border-radius: 20px 20px 0px 0px;
+      padding-top: 1rem !important;
+      padding-bottom: 1rem !important;
+      z-index: 9999;
+      position: fixed;
+      width: 100%;
+    }
+    .navbar .nav-row{
+      width: 100%;
+    }
     .header .jumbotron{
         padding: 20px 10%;
         margin: unset;
@@ -331,14 +361,13 @@ body .jumbotron{
     }
     .header .head-box{
         z-index: 100;
-        margin: auto;
         display: flex;
         flex-direction: column;
     }
     .header .jumbotron .img-box{
         z-index: 100;
         display: flex;
-        margin: 0 auto;
+        margin: 1rem 0;
         align-items: center;
         width: 150px;
         height: 150px;
@@ -365,16 +394,21 @@ body .jumbotron{
     }
     /* about */
     .about .about-box{
+        background: #201f1f;
         position: relative;
         top: -30px;
         border-radius: 30px 30px 0px 0px;
-        background: white;
         padding-right: 30px;
         padding-left: 30px;
-        height: 40vh;
     }
     .about .about-title{
         padding-top: 1rem;
 
     }
+    /* skill */
+    .skills .skill-box{
+      background: #201f1f;
+      padding-right: 30px;
+      padding-left: 30px;
+  }
 }
