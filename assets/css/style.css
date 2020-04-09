@@ -327,6 +327,12 @@ body .jumbotron{
         left: 70%;
         top: 0%;
     }
+    .hero-app-2-fix {
+      position: fixed;
+      left: -15%;
+      top: 4%;
+      bottom: unset;
+    }
     .hero-app-2 {
         position: absolute;
         left: -15%;
@@ -363,7 +369,7 @@ body .jumbotron{
     }
     .navbar{
       background: #141414;
-      border-radius: 20px 20px 0px 0px;
+      border-radius: 30px 30px 0px 0px;
       padding-top: 1rem !important;
       padding-bottom: 1rem !important;
       z-index: 9999;
@@ -472,17 +478,29 @@ body .jumbotron{
     background: linear-gradient(245deg, white, rgba(255, 255, 255, 0.1411764705882353));
   }
   .skills .tool-card{
-    background: linear-gradient(45deg, #067aec, #b50570);
+    padding: 1.5rem;
+    background: linear-gradient(45deg, #27024a, #059db5);
     border: unset;
-    border-radius: 30px;
+    border-radius: 20px;
+  }
+  .skills .tool-card .tool-img{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+  }
+  .skills .tool-card .tool-img img{
+    width: 100%;
   }
   /* ----project----- */
   .project{
+    background: #201f1f;
     padding-top: 2rem;
   }
   .project .project-box{
+    padding-bottom: 2rem;
     border-radius: 40px 40px 0px 0px;
-    background: #313030;
+    background: #272727;
+    /* background: #313030; */
     padding-right: 30px;
     padding-left: 30px;
   }
@@ -501,5 +519,54 @@ body .jumbotron{
     content: '';
     border: 2px solid #0062cc;
     border-radius: 100px;
+  }
+  .project-box .code-card{
+    border: unset;
+    border-radius: 20px 20px 20px 20px;
+    background: #282a2c;
+  }
+  .project-box .code-card .code-img{
+    border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
+  }
+  .project-box .code-title .code-img img{
+    width: 100%;
+  }
+  /* edukasi */
+  .edu{
+    background: #272727;
+  }
+  .edu .edu-box{
+    padding-top: 2rem;
+    background: #313030;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-radius: 40px 40px 0px 0px;
+  }
+  /* conttact */
+  .contact .contact-box{
+    padding-top: 2rem;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+
+  .contact-box .akun-box{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-box .akun-box .email-btn{
+    padding-right: 2rem;
+    padding-left: 2rem;
+    border-radius: 100px;
+    background: #a52323;
+  }
+  .contact-box .akun-box .wa-btn{
+    padding-right: 2rem;
+    padding-left: 2rem;
+    border-radius: 100px;
+    background: #0f4437;
   }
 }
