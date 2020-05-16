@@ -4,8 +4,99 @@
   src: url(../fonts/Product_Sans_Regular.ttf) format("truetype");
 }
 body {
-  font-family:  "ProductSans"
+  font-family:  "ProductSans";
 }
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: black !important;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+.mySlides{
+  margin: 0 auto;
+}
+.mySlides img{
+  width: unset !important;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
 /* particle */
 .hero-app-1 {
     position: absolute;
@@ -181,10 +272,19 @@ body {
 }
 
 /* Laptop */
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 768px){
   .smartphone{
     display: none;
   }  
+
+  @font-face{
+    font-family: "ProductSans";
+    src: url(../fonts/Product_Sans_Regular.ttf) format("truetype");
+  }
+  .desktop {
+    font-family:  "ProductSans";
+  }
+
 .heading-1{
     font-size: 3rem;
     font-weight: bolder;
@@ -206,7 +306,8 @@ body .jumbotron{
     padding: unset;
 }
 .jumbotron .overlay{
-    background: linear-gradient(45deg, #09444ee0, #06044ac2);
+    /* background: linear-gradient(45deg, #09444ee0, #06044ac2); */
+    background: linear-gradient(45deg, rgba(7, 30, 41, 0.8784313725490196), rgba(1, 32, 60, 0.8784313725490196));
     width: 100%;
     height: 100%;
     margin: unset;
@@ -245,6 +346,7 @@ body .jumbotron{
 .jumbotron .name-box .heading-outline{
     color: transparent;
     -webkit-text-stroke: 1px white;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 .jumbotron .col-md-4{
     margin: auto auto;
@@ -274,6 +376,249 @@ body .jumbotron{
     font-size: larger;
     margin-left: 1rem;
 }
+.navbar-b{
+  position: sticky;
+    top: 0;
+    background: white;
+    z-index: 999;
+}
+.navbar-b .navbar{
+  position: relative;
+  height: 80px;
+  top: 0;
+  background: #161616;
+  z-index: 999;
+}
+.navbar .btn-3{
+    position: relative;
+    font-weight: 900;
+    color: #d1d1d1;
+    display: inline-block;
+    -webkit-transition: .6s;
+    padding-top: 0.4rem;
+    padding-left: 1.5rem;
+    transition: .6s;
+}
+.navbar .btn-3:hover{
+  position: relative;
+  font-weight: 900;
+  color: #d1d1d1;
+  display: inline-block;
+  -webkit-transition: .6s;
+  padding-top: 0.4rem;
+  padding-left: 2.4rem;
+  transition: .6s;
+}
+.navbar .btn-3:after{
+  height: 38px;
+    width: 61px;
+    background-color: rgba(20, 111, 210, 0.24);
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0px;
+    border-radius: 5px;
+    z-index: -1;
+    -webkit-transition: .6s;
+    transition: .6s;
+}
+.navbar-b .navbar .nav-link{
+  color: white;
+}
+/* about */
+
+.about .container .oalah .circle-part{
+  width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    float: right;
+    position: relative;
+    left: 40%;
+    top: 30%;
+    background: linear-gradient(45deg, rgba(8, 24, 41, 0.62), transparent);
+    transition: 1s;
+    -webkit-transition: 1s;
+    transform: scale(1);
+    position: absolute;
+}
+.about .container .oalah:hover .circle-part{
+
+  width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    float: right;
+    position: relative;
+    left: 40%;
+    top: 30%;
+    background: linear-gradient(105deg, rgba(8, 24, 41, 0.62), transparent);
+    transition: 1s;
+    -webkit-transition: 1s;
+    transform: scale(1.5);
+    position: absolute;
+}
+.about{
+  overflow: hidden;
+    background: #161616;
+    color: #ababab;
+}
+.about .img-box{
+  margin: 0 auto;
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  z-index: 2;
+  overflow: hidden;
+}
+.about .img-box img{
+  height: 100%;
+}
+.about .about-title{
+  margin-top: 4rem;
+}
+.about .blue-head{
+  z-index: 4;
+  position: relative;
+  font-weight: 900;
+  color: #146fd2;
+  font-family: sans-serif;
+}
+.about .outline-head{
+  font-size: 100px;
+    top: 0%;
+    font-weight: 900;
+    letter-spacing: 10px;
+    right: 45%;
+    position: absolute;
+  color: transparent;
+  -webkit-text-stroke: 2px rgba(49, 49, 49, 0.904);
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+/* skill */
+.skill{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #1a1a1b;
+  color: #ababab;
+}
+.skill .progress{
+  background-color: unset;
+}
+.skill .progress .progress-bar{
+  background: linear-gradient(240deg, #08478c, transparent);
+  border-radius: 100px;
+}
+.skill .skill-img-box{
+  overflow: hidden;
+}
+.skill .skill-img-box img{
+  width: 100%;
+  
+}
+
+/* project */
+.project{
+  background: #161616;
+  color: #ababab;
+}
+  .project-card{
+    background-color: transparent !important;
+    border: unset !important;
+    border-radius: unset !important;
+    -webkit-transition: .6s;
+    transition: .6s;
+  }
+  .project-card:hover .body-up{
+    background: linear-gradient(45deg, #062d56, #117a8b);
+    border: unset;
+    border-radius: 20px;
+    position: relative;
+    top: -80px;
+    width: 90%;
+    margin-left: 2rem;
+    box-shadow: 7px 3px 30px rgba(32, 32, 32, 0.75);
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .project-card .title-up{
+    background: transparent;
+    border: unset;
+    border-radius: unset;
+  }
+  .project-card .body-up{
+    padding: 30px;
+    background: #0f0f0f;
+    border: unset;
+    border-radius: 20px;
+    position: relative;
+    top: -80px;
+    width: 90%;
+    -webkit-transition: 2s;
+    transition: 2s;
+  }
+  .project-card .title-up .project-img{
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  .project-card .title-up .project-img img{
+    width: 100%;
+  }
+  .project-card .title-down .project-img{
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .project-card .title-down .project-img img{
+    width: 100%;
+  }
+
+
+  /* Edu */
+  .education{
+    color: white;
+  }
+  .education .dark-card{
+    background: unset;
+    transition: 1s;
+  }
+  .education .dark-card:hover{
+    background: #202223;
+    transition: 1s;
+  }
+
+  /* Dicoding */
+  .dicoding-box{
+    color: white;
+  }
+  .dicoding-box .dark-card{
+    background: #202223;
+    transition: 1s;
+  }
+  .get-in{
+    background: #080808;
+    color: white;
+  }
+  .get-in .get-box .row{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .get-in .row-get{
+    position: relative;
+    top: -50px;
+
+  }
+  .btn-rounded{
+    border-radius: 100px !important;
+  }
+  .contact-box{
+    padding: 3rem 3rem;
+    background: #202223;
+    box-shadow: 6px 7px 20px 0px rgba(0, 0, 0, 0.4);
+  }
+  body{
+    background-color: #0f0f0f !important;
+  }
+  footer{
+    display: none;
+  }
 }
 
 /* HP */
@@ -523,13 +868,25 @@ body .jumbotron{
   .project-box .code-card{
     border: unset;
     border-radius: 20px 20px 20px 20px;
-    background: #282a2c;
+    background: #141414;
   }
   .project-box .code-card .code-img{
     border-radius: 20px 20px 0px 0px;
     overflow: hidden;
   }
   .project-box .code-title .code-img img{
+    width: 100%;
+  }
+  .project-box .design-card{
+    border: unset;
+    border-radius: 20px 20px 20px 20px;
+    background: #141414;
+  }
+  .project-box .design-card .design-img{
+    border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
+  }
+  .project-box .design-title .design-img img{
     width: 100%;
   }
   /* edukasi */
@@ -568,5 +925,11 @@ body .jumbotron{
     padding-left: 2rem;
     border-radius: 100px;
     background: #0f4437;
+  }
+  .dark-card{
+    background: #202223 !important;
+    color: white;
+    border-radius: 20px;
+    transition: 1s;
   }
 }
